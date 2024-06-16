@@ -1,3 +1,7 @@
+/* problem link: https://leetcode.com/problems/ipo/description/
+   type: Hard
+   Topic: Array, Heap
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
