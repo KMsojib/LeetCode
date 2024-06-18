@@ -2,6 +2,8 @@
     Problem link: 
     Type: Medium
     Topic: Binary search
+    Time Complexity: O(NLogN)
+    Space Complexity: O(N)
 
 */
 
