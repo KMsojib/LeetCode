@@ -4,14 +4,14 @@ using namespace std;
 vector<int>NGE(vector<int>v,int n){
     vector<int>nge(n);
     stack<int>st;
-    for(int i=0; i<n; i++){
-        while(!st.empty() && v[i]>v[st.top()]){
+    for(int i=0; i<n; i++){ // O(n)
+        while(!st.empty() && v[i]>v[st.top()]){ // stack.size()
             nge[st.top()] = i;
             st.pop();
         }
         st.push(i);
     }
-    while(!st.empty()){
+    while(!st.empty()){ // stack.size()
         nge[st.top()] = -1;
         st.pop();
     }
