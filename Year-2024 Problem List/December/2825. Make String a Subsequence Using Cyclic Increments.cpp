@@ -26,3 +26,22 @@ public:
         return r == m;
     }
 };
+
+/*---------------------------------*Python*---------------------------------*/
+class Solution:
+    def canMakeSubsequence(self, str1: str, str2: str) -> bool:
+        n = len(str1)
+        m = len(str2)
+        l, r = 0, 0
+
+        while l < n and r < m:
+            if str1[l] == str2[r]:
+                l += 1
+                r += 1
+            elif (ord(str1[l]) + 1) % 26 == ord(str2[r]) % 26:
+                l += 1
+                r += 1
+            else:
+                l += 1
+
+        return r == m
