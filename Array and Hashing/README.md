@@ -42,7 +42,9 @@ def find_duplicates(arr):
 arr = [1, 2, 3, 4, 5, 1, 2, 3]
 print("Duplicates:", find_duplicates(arr))
 
-// Hashing using Arrays and Maps in C++
+#### Hashing using Arrays and Maps in C++
+
+```C++
 
 #include <iostream>
 #include <vector>
@@ -72,7 +74,7 @@ int main() {
     return 0;
 }
 
-# Suffix and Prefix Hashing in Python
+#### Suffix and Prefix Hashing in Python
 
 # Calculate prefix sums
 def prefix_sums(arr):
@@ -95,7 +97,7 @@ arr = [1, 2, 3, 4, 5]
 print("Prefix Sums:", prefix_sums(arr))
 print("Suffix Sums:", suffix_sums(arr))
 
-// Suffix and Prefix Hashing in C++
+#### Suffix and Prefix Hashing in C++
 
 #include <iostream>
 #include <vector>
@@ -137,5 +139,4 @@ int main() {
     
     return 0;
 }
-
-You can now copy this README file into your repository. It includes all the provided code implementations for hashing using arrays and maps, as well as suffix and prefix hashing in both Python and C++.
+```Happy Coding
