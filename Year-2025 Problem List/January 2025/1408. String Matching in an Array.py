@@ -23,6 +23,11 @@ class Solution:
                     ans.add(words[j])
         return list(ans)
 
-solution = Solution()
-words = ["mass", "as", "hero", "superhero"]
-print(solution.stringMatching(words)) 
+def main():
+    solution = Solution()
+    words = ["mass", "as", "hero", "superhero"]
+    result = solution.stringMatching(words)
+    print(result)
+
+if __name__ == "__main__":
+    main()
