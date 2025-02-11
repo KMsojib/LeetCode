@@ -1,6 +1,6 @@
 /*
 # Problem          : 1910. Remove All Occurrences of a Substring
-# Time Complexity  : 
+# Time Complexity  : O(N)
 # C++ Solution
 */
 
