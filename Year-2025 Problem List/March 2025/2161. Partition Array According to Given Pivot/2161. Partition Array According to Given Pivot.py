@@ -32,21 +32,3 @@ ans = less_val + equal_val + greater_val
 return ans
 
 """
-
-# Two Pointers
-class Solution:
-    def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
-        left = 0
-        right = len(nums) - 1
-
-        while left <= right:
-            if nums[left] < pivot:
-                left += 1
-            elif nums[right] >= pivot:
-                right -= 1
-            else:
-                nums[left], nums[right] = nums[right], nums[left]
-                left += 1
-                right -= 1
-
-        return nums
