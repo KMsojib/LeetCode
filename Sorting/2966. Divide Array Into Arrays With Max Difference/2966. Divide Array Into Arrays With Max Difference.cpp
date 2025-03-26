@@ -1,3 +1,7 @@
+# Problem          : 2966. Divide Array Into Arrays With Max Difference
+# Time Complexity  : O(nlogn)
+# C++ Solution
+
 class Solution {
 public:
     vector<vector<int>> divideArray(vector<int>& nums, int k) {
