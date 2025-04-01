@@ -1,8 +1,9 @@
+/*
 # Problem          : 2140. Solving Questions With Brainpower
 # Time Complexity  : O(N)
 # Space Complexity : O(N)
 # C++ Solution
-
+*/
 #define ll long long int
 class Solution {
 public:
