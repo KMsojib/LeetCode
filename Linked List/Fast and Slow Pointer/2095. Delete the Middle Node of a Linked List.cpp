@@ -36,3 +36,28 @@ public:
         return head;
     }
 };
+
+
+============================================================= Python =================================================
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        # Edge case: single node
+        if not head.next:
+            return None
+
+        # Two pointer approach
+        fast, slow = head, head
+        temp = slow
+        while fast and fast.next:
+            temp = slow
+            slow = slow.next
+            fast = fast.next.next
+
+        # Delete the middle node
+        temp.next = slow.next
+        return head
