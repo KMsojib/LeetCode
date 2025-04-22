@@ -21,3 +21,19 @@ public:
         return ans;
     }
 };
+
+=============================== Python ========================================
+class Solution:
+    def buildArray(self, targets: List[int], n: int) -> List[str]:
+        ans = []
+        i = 0
+
+        for target in targets:
+            while i < target - 1:
+                ans.append("Push")
+                ans.append("Pop")
+                i += 1
+            
+            ans.append("Push")
+            i += 1
+        return ans
