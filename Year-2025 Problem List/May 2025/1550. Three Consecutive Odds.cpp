@@ -17,3 +17,37 @@ public:
         return ok;
     }
 };
+
+// Python Solution
+class Solution(object):
+    def threeConsecutiveOdds(self, arr):
+        odd_count = 0
+        for i in arr:
+            if i%2:
+                odd_count+=1
+            else:
+                odd_count = 0
+            
+            if odd_count == 3:
+                return True
+        return False
+
+
+// Another C++ Solution when i was noob
+class Solution {
+public:
+    bool threeConsecutiveOdds(vector<int>& arr) {
+        bool ok = false;
+        int n = arr.size() - 1;
+        int l = 0;
+        while (l + 2 <= n) {
+            //cout << arr[l] << arr[l + 1] << arr[l + 2] << endl;
+            if (arr[l] % 2 != 0 && arr[l + 1] % 2 != 0 && arr[l + 2] % 2 != 0) {
+                return true;
+            } else {
+                l++;
+            }
+        }
+        return false;
+    }
+};
