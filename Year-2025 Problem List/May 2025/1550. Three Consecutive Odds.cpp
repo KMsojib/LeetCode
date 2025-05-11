@@ -18,7 +18,7 @@ public:
     }
 };
 
-// Python Solution
+// Python Solution TC O(n) SC O(1)
 class Solution(object):
     def threeConsecutiveOdds(self, arr):
         odd_count = 0
