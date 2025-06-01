@@ -1,0 +1,6 @@
+Top 5 Most Common Graph Algorithms for Coding Interviews:
+	1. DFS (Most Important Algo.)
+	2. BFS
+	3. Union Find
+	4. Topological Sort prob: Alien Disctionary 
+	5. Dijkstra's Shortest Path : Network Delay Time.
