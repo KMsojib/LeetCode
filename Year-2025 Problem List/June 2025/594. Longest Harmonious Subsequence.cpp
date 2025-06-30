@@ -29,3 +29,29 @@ public:
         return longHarm;
     }
 };
+
+
+
+/*
+# Approach         : Hash Map
+# Time Complexity  : O(n)
+# Space Complexity : O(n)
+*/
+
+class Solution {
+public:
+    int findLHS(vector<int>& nums) {
+        map<int,int>mp;
+        int longHarm = 0;
+        for(auto num : nums){
+            mp[num]++;
+        }
+
+        for(auto[x,y] : mp){
+            if(mp.find(x+1) != mp.end()){
+                longHarm = max(longHarm, y + mp[x+1]);
+            }
+        }
+        return longHarm;
+    }
+};
