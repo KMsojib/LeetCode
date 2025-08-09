@@ -1,7 +1,7 @@
 /*
 # Problem          : 1342. Number of Steps to Reduce a Number to Zero
-# Time Complexity  : 
-# space Complexity : 
+# Time Complexity  : O(long n)
+# space Complexity : O(1)
 # C++ Solution
 */
 
