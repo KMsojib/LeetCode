@@ -1,7 +1,7 @@
 /*
 # Problem          : 1323. Maximum 69 Number
 # Time Complexity  : O(n)
-# space Complexity : O(1)
+# space Complexity : constant
 # C++ Solution
 */
 class Solution {
